@@ -1,6 +1,5 @@
-
-<div class="container">
-<h1> <%= @cocktail.name %> - details</h1>
+<div class="container text-center w-50 ">
+<h1 class="my-4"><%= @cocktail.name %></h1>
 
 <h2>Doses:</h2>
 <ul class="list-group">
@@ -12,8 +11,8 @@
   <% end %>
 </ul>
 
-<%= link_to 'Add dose', new_cocktail_dose_path(@cocktail)  %>
-| <%= link_to 'All cocktails', cocktails_path %>
+<%= link_to 'Add dose', new_cocktail_dose_path(@cocktail), class: "badge badge-pill badge-primary"  %>
+| <%= link_to 'All cocktails', cocktails_path, class: "badge badge-pill badge-success" %>
 
 </div>
 

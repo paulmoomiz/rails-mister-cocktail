@@ -13,9 +13,8 @@ Rails.application.routes.draw do
   # get "cocktails/42/doses/new"
   # post "cocktails/42/doses"
   resources :cocktails do
-    resources :doses, only: [ :new, :create ]
+    resources :doses, only: [:new, :create]
   end
    # delete "doses/25"
-  resources :doses, only: [ :destroy ]
-
+  resources :doses, only: [:destroy]
 end
