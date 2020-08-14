@@ -1,3 +1,10 @@
 <div class="container">
-<h1>Welcome to Cocktail Database</h1>
+<h1>Cocktail form</h1>
+
+<%= simple_form_for(@cocktail) do |f| %>
+  <%= f.input :name %>
+  <%= f.submit "Submit cocktail name", class: "btn btn-primary" %>
+<% end %>
+
+</div>
 </div>
